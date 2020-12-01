@@ -1,0 +1,45 @@
+body {
+  width: 100%;
+  min-height:100%;
+  background: 
+    linear-gradient(-45deg, rgba(0,0,0,0.3), rgba(0, 40, 105, 0.8)),
+    url('./static/img/2.jpeg');
+  background-attachment: fixed;
+  background-size: cover; 
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.message {
+  display: flex;
+  flex: 1 1 15%;
+  min-height: 2.5em;
+  max-height: 2em;
+  font-size: 2.2em;
+  color: #F4B350;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  align-content: center;
+  padding:10px 0px 20px 0px;
+  margin-bottom: 6px;
+  background-color: rgba(0,0,0,0.5);
+  text-shadow: 3px 3px 10px #000;
+  display: block;
+
+}
+.TodoList-enter{
+  opacity: 0.01
+}
+
+.TodoList-enter.TodoList-enter-active{
+  opacity:1;
+  transition: opacity 300ms ease-in;
+}
+.TodoList-leave{
+  opacity:1
+}
+.TodoList-enter.TodoList-leave-active{
+  opacity:0.01;
+  transition: opacity 300ms ease-in;
+}
